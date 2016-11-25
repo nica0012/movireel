@@ -542,8 +542,9 @@ h4 {
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.625;
+    font-size: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
     text-align: center;
     color: #1f1f1f;
     font-weight: 300;
@@ -624,16 +625,16 @@ section h3 {
 }
 
 .btn {
-    border: none;
+    border: 2px solid #5a73ff;
+    background: rgba(51, 199, 95, 0);
+    color: #5a73ff;
     margin: 0 auto;
     text-align: center;
-    background: #33c75f;
     -webkit-border-radius: 12;
     -moz-border-radius: 12;
     border-radius: 12px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    color: #ffffff;
     font-size: 20px;
     padding: 15px 35px 15px 35px;
     text-decoration: none;
@@ -641,9 +642,39 @@ section h3 {
 }
 
 .btn:hover {
+     cursor: pointer;
+    border: 2px solid #33c75f;
+    background: rgb(51, 199, 95);
+    color: #fff;
+    transition: .1s;
+    text-decoration: none;
+}
+
+.downloadBtn {
+    border: 2px solid #5a73ff;
+    margin: 10px auto;
+    text-align: center;
+    background: rgba(51, 199, 95, 0);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #5a73ff;
+    font-size: 16px;
+    padding: 12px 25px 12px 25px;
+    text-decoration: none;
+    transition: .2s;
+    left: auto;
+    right: auto;
+}
+
+.downloadBtn:hover {
     cursor: pointer;
-    background: #30a753;
-    transition: .3s;
+    border: 2px solid #33c75f;
+    background: rgb(51, 199, 95);
+    color: #fff;
+    transition: .1s;
     text-decoration: none;
 }
 
@@ -667,9 +698,11 @@ footer p {
 /******Login Form******/
 
 .loginBody {
-    background-color: #eaeaea;
+/*    background-color: #eaeaea;*/
     /*        background-image: url(../images/lake-louise-overlay.jpg);*/
     /*    background-image: url(../images/header-bg.svg);*/
+        background-image: url("../images/header-bg.svg");
+
     background-size: cover;
 }
 
@@ -707,7 +740,7 @@ footer p {
     position: relative;
     width: 360px;
     padding: 7em 2em 1em 2em;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.4);
     margin: 7rem auto 0em;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.02);
     /*    border: 3px solid rgba(255, 255, 255, 0.3);*/
@@ -771,8 +804,8 @@ footer p {
 
 .form .message {
     margin: 15px 0 0;
-    color: #b3b3b3;
-    /*    color: #ffffff;*/
+/*    color: #b3b3b3;*/
+        color: #ffffff;
     font-size: 14px;
 }
 
@@ -780,10 +813,12 @@ footer p {
     color: #5a73ff;
     text-decoration: none;
 }
+/*
 
 .form .register-form {
     display: none;
 }
+*/
 
 .container {
     position: relative;
@@ -928,13 +963,10 @@ footer p {
     }
     .login-page {
         width: 300px;
-     
     }
     .form {
-       
         max-width: 360px;
-    padding: 45px 5px 45px 5px;
-      
+        padding: 45px 5px 45px 5px;
     }
 }
 
